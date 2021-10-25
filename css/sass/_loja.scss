@@ -73,4 +73,15 @@
       }
     }
   }
+  @include d(mobile) {
+    ul {
+      li {
+        &:before {
+          position: relative;
+          left: -10px;
+          top: 0px;
+        }
+      }
+    }
+  }
 }

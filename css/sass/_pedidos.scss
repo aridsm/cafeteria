@@ -118,15 +118,17 @@
     }
   }
   @include d(mobile) {
-    max-width: 340px;
+    max-width: 320px;
     img {
-      width: 90px;
+      width: 85px;
       top: -20px;
       left: -25px;
     }
-    h3,
+    h3 {
+      padding-left: 70px;
+    }
     .card-texto {
-      padding-left: 75px;
+      padding-left: 55px;
     }
   }
 }
@@ -155,7 +157,7 @@
     }
   }
   @include d(mobile) {
-    max-width: 340px;
+    max-width: 320px;
   }
 }
 
