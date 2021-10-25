@@ -1,6 +1,4 @@
 body {
-  display: grid;
-  grid-template-columns: auto auto;
   font-family: "Lexend Giga", sans-serif;
   @include d(mobile) {
     grid-template-columns: auto;
@@ -13,8 +11,6 @@ main {
     margin-left: 0px;
   }
 }
-
-
 
 .background-escuro {
   background: radial-gradient(50% 83.2% at 50% 16%, #323232 0%, $preto 100%);

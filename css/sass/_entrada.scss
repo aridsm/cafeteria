@@ -2,52 +2,47 @@
   color: $branco;
   font-size: 11px;
   height: 100vh;
+  min-height: 500px;
   .container-entrada {
     max-width: 990px;
     margin: 0 auto;
     padding: 40px 15px;
+    height: 100%;
   }
   .titulo {
     position: relative;
+    width: -moz-fit-content;
+    width: -webkit-fit-content;
     width: fit-content;
+    height: 100%;
     margin: 0 auto;
-    margin-top: 150px;
-    margin-bottom: 150px;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     p {
-      position: absolute;
       max-width: 200px;
-      right: -40px;
-      bottom: -90px;
+      display: block;
+      margin-left: auto;
+      position: relative;
+      top: 50px;
+      right: -50px;
     }
     h1 {
       text-transform: uppercase;
       font-size: 90px;
       position: relative;
       z-index: 2;
+      width: -moz-fit-content;
+      width: -webkit-fit-content;
       width: fit-content;
       text-align: center;
       display: flex;
       align-items: center;
       text-shadow: 6px 6px 30px rgba(0, 0, 0, 0.4);
-      &:before {
-        content: "";
-        width: 330px;
-        height: 400px;
-        background-image: url("../../img/cafe-capa.png");
-        background-repeat: no-repeat;
-        background-size: contain;
-        display: block;
-        position: absolute;
-        left: -80px;
-        z-index: -1;
-        -webkit-filter: brightness(0.96) contrast(0.85) grayscale(1);
-        filter: brightness(0.96) contrast(0.85) grayscale(1);
-        @include d(medio) {
-          width: 280px;
-          height: 350px;
-          left: -60px;
-        }
-      }
+
       &:after {
         content: "";
         width: 280px;
@@ -94,22 +89,10 @@
   }
   @include d(tablet) {
     margin-top: 80px;
-    height: calc(100vh - 90px);
+    height: calc(100vh - 80px);
     .titulo {
-      margin-top: 150px;
-      margin-bottom: 150px;
-      p {
-        bottom: -80px;
-      }
       h1 {
         font-size: 60px;
-        &:before {
-          content: "";
-          width: 200px;
-          height: 300px;
-          left: -30px;
-          background-position: center;
-        }
         &:after {
           width: 180px;
           height: 180px;
@@ -121,17 +104,8 @@
   }
   @include d(mobile) {
     .titulo {
-      p {
-        bottom: -60px;
-      }
       h1 {
-        font-size: 48px;
-        &:before {
-          content: "";
-          width: 160px;
-          height: 280px;
-          left: -30px;
-        }
+        font-size: 42px;
         &:after {
           width: 120px;
           height: 120px;
@@ -143,6 +117,114 @@
     }
     span:nth-of-type(2) {
       display: none;
+    }
+  }
+}
+
+/*
+      &:before {
+        content: "";
+        width: 330px;
+        height: 400px;
+        background-image: url("../../img/cafe-capa.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        display: block;
+        position: absolute;
+        left: -80px;
+        z-index: -1;
+        -webkit-filter: brightness(0.96) contrast(0.85) grayscale(1);
+        filter: brightness(0.96) contrast(0.85) grayscale(1);
+        @include d(medio) {
+          width: 280px;
+          height: 350px;
+          left: -60px;
+        }
+      }
+
+      */
+
+.cafe-imgs {
+  position: relative;
+  .cafe-img {
+    position: absolute;
+    -webkit-filter: brightness(0.96) contrast(0.85) grayscale(1);
+    filter: brightness(0.96) contrast(0.85) grayscale(1);
+  }
+  .cafe-img:nth-of-type(1) {
+    width: 260px;
+    bottom: -80px;
+    left: -60px;
+    @include d(tablet) {
+      width: 180px;
+      bottom: -70px;
+      left: -40px;
+    }
+    @include d(mobile) {
+      width: 120px;
+      bottom: -40px;
+      left: -10px;
+    }
+  }
+  .cafe-img:nth-of-type(2) {
+    width: 180px;
+    bottom: 50px;
+    left: -10px;
+    z-index: 5;
+    @include d(tablet) {
+      width: 120px;
+      bottom: 40px;
+      left: 0px;
+    }
+    @include d(mobile) {
+      width: 90px;
+      bottom: 30px;
+      left: 10px;
+    }
+  }
+  .cafe-img:nth-of-type(3) {
+    width: 320px;
+    top: 50px;
+    left: -80px;
+    @include d(tablet) {
+      width: 230px;
+      left: -70px;
+    }
+    @include d(mobile) {
+      width: 160px;
+      left: -20px;
+      top: 20px;
+    }
+  }
+
+  .cafe-img:nth-of-type(4) {
+    width: 200px;
+    top: -50px;
+    left: 0px;
+    @include d(tablet) {
+      width: 150px;
+      left: 10px;
+    }
+    @include d(mobile) {
+      width: 100px;
+      top: -35px;
+      left: 20px;
+    }
+  }
+
+  .cafe-img:nth-of-type(5) {
+    width: 65px;
+    top: -80px;
+    left: -70px;
+    @include d(tablet) {
+      width: 50px;
+      left: -60px;
+      top: -70px;
+    }
+    @include d(mobile) {
+      width: 30px;
+      left: -20px;
+      top: -50px;
     }
   }
 }

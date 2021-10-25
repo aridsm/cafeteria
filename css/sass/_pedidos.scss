@@ -117,6 +117,18 @@
       }
     }
   }
+  @include d(mobile) {
+    max-width: 340px;
+    img {
+      width: 90px;
+      top: -20px;
+      left: -25px;
+    }
+    h3,
+    .card-texto {
+      padding-left: 75px;
+    }
+  }
 }
 
 .btns-cards {
@@ -141,6 +153,9 @@
     &:hover {
       background: $preto;
     }
+  }
+  @include d(mobile) {
+    max-width: 340px;
   }
 }
 

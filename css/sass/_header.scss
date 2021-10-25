@@ -22,6 +22,8 @@ header {
         padding: 20px 30px;
         width: 100%;
         text-align: center;
+        height: -moz-fit-content;
+        height: -webkit-fit-content;
         height: fit-content;
         font-weight: 700;
         font-size: 13px;
@@ -55,12 +57,15 @@ header {
     display: none;
   }
   @include d(tablet) {
+    height: -moz-fit-content;
+    height: -webkit-fit-content;
     height: fit-content;
     padding-top: 7px;
     padding-bottom: 7px;
     width: 100%;
     padding-left: 20px;
     padding-right: 20px;
+    top: 0;
     .header-div {
       display: flex;
       flex-direction: row;
@@ -68,11 +73,15 @@ header {
       height: 100%;
       width: 100%;
       nav {
+        width: -moz-fit-content;
+        width: -webkit-fit-content;
         width: fit-content;
         display: flex;
         flex-direction: row;
         a {
           padding: 20px 15px;
+          width: -moz-fit-content;
+          width: -webkit-fit-content;
           width: fit-content;
           height: 100%;
           &:hover {
@@ -125,6 +134,8 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    height: -moz-fit-content;
+    height: -webkit-fit-content;
     height: fit-content;
     width: 100%;
     text-align: center;
