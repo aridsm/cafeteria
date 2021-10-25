@@ -1,0 +1,148 @@
+.entrada {
+  color: $branco;
+  font-size: 11px;
+  height: 100vh;
+  .container-entrada {
+    max-width: 990px;
+    margin: 0 auto;
+    padding: 40px 15px;
+  }
+  .titulo {
+    position: relative;
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    p {
+      position: absolute;
+      max-width: 200px;
+      right: -40px;
+      bottom: -90px;
+    }
+    h1 {
+      text-transform: uppercase;
+      font-size: 90px;
+      position: relative;
+      z-index: 2;
+      width: fit-content;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      text-shadow: 6px 6px 30px rgba(0, 0, 0, 0.4);
+      &:before {
+        content: "";
+        width: 330px;
+        height: 400px;
+        background-image: url("../../img/cafe-capa.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        display: block;
+        position: absolute;
+        left: -80px;
+        z-index: -1;
+        -webkit-filter: brightness(0.96) contrast(0.85) grayscale(1);
+        filter: brightness(0.96) contrast(0.85) grayscale(1);
+        @include d(medio) {
+          width: 280px;
+          height: 350px;
+          left: -60px;
+        }
+      }
+      &:after {
+        content: "";
+        width: 280px;
+        height: 280px;
+        border-radius: 50%;
+        border: 6px solid $secundaria;
+        display: block;
+        position: absolute;
+        right: -80px;
+        bottom: -20px;
+        z-index: -1;
+        @include d(medio) {
+          width: 260px;
+          height: 260px;
+          right: -60px;
+        }
+      }
+    }
+  }
+  .dados {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    a {
+      padding: 10px;
+      border: 2px solid $secundaria;
+      color: $secundaria;
+      font-weight: bold;
+      transition: all 0.5s ease;
+      &:hover {
+        background: $secundaria;
+        color: $preto;
+      }
+    }
+    span {
+      flex: 1;
+    }
+    span:nth-of-type(2) {
+      text-align: center;
+    }
+    span:nth-of-type(3) {
+      text-align: right;
+    }
+  }
+  @include d(tablet) {
+    margin-top: 80px;
+    height: calc(100vh - 90px);
+    .titulo {
+      margin-top: 150px;
+      margin-bottom: 150px;
+      p {
+        bottom: -80px;
+      }
+      h1 {
+        font-size: 60px;
+        &:before {
+          content: "";
+          width: 200px;
+          height: 300px;
+          left: -30px;
+          background-position: center;
+        }
+        &:after {
+          width: 180px;
+          height: 180px;
+          display: block;
+          right: -30px;
+        }
+      }
+    }
+  }
+  @include d(mobile) {
+    .titulo {
+      p {
+        bottom: -60px;
+      }
+      h1 {
+        font-size: 48px;
+        &:before {
+          content: "";
+          width: 160px;
+          height: 280px;
+          left: -30px;
+        }
+        &:after {
+          width: 120px;
+          height: 120px;
+          display: block;
+          right: -30px;
+          top: -10px;
+        }
+      }
+    }
+    span:nth-of-type(2) {
+      display: none;
+    }
+  }
+}

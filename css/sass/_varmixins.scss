@@ -1,0 +1,28 @@
+// cores e fontes
+
+$preto: #1b1b1d;
+$cinza: #222225;
+$cinza2: #323234;
+$titulos: #d2cabc;
+$branco: #b6b2aa;
+$secundaria: #c9aa54;
+
+$fonte: "Lexend Giga", sans-serif;
+
+/* responsivo */
+
+@mixin d($device) {
+  @if $device == mobile {
+    @media (max-width: 650px) {
+      @content;
+    }
+  } @else if $device == tablet {
+    @media (max-width: 950px) {
+      @content;
+    }
+  } @else if $device == medio {
+    @media (max-width: 1150px) {
+      @content;
+    }
+  }
+}

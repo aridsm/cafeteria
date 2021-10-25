@@ -1,0 +1,37 @@
+body {
+  display: grid;
+  grid-template-columns: auto auto;
+  font-family: "Lexend Giga", sans-serif;
+  @include d(mobile) {
+    grid-template-columns: auto;
+  }
+}
+
+main {
+  margin-left: 140px;
+  @include d(tablet) {
+    margin-left: 0px;
+  }
+}
+
+
+
+.background-escuro {
+  background: radial-gradient(50% 83.2% at 50% 16%, #323232 0%, $preto 100%);
+}
+
+.background-medio {
+  background: radial-gradient(
+    43.9% 84.5% at 46.1% 0%,
+    #323234 0%,
+    #222225 100%
+  );
+}
+
+.background-claro {
+  background: radial-gradient(
+    25% 75% at 70% 0%,
+    #4b4b4e 0%,
+    hsl(240, 3%, 23%) 100%
+  );
+}

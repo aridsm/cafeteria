@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@300;700&display=swap" rel="stylesheet">
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Pagina inicial</title>
+
+</head>
+
+<body>
+
+  <header>
+    <div class="header-div">
+      <a href="" class="logo"><img src="img/logo.png" alt="logo Coffe Shop"></a>
+      <nav class="js-menu-mobile">
+        <a href="">Home</a>
+        <a href="">Produtos</a>
+        <a href="">A loja</a>
+        <a href="">Contato</a>
+      </nav>
+      <div class="redes-sociais">
+        <a href=""><img src="img/facebook.svg" alt="link facebook"></a>
+        <a href=""><img src="img/twitter.svg" alt="link twitter"></a>
+        <a href=""><img src="img/instagram.svg" alt="link instagram"></a>
+      </div>
+      <div class="btn-mobile">
+        <button>
+          <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+
+
+    <div class="entrada background-escuro">
+      <div class="container-entrada">
+        <div class="dados">
+          <span>
+            <p>Fortaleza - CE</p>
+            <p>Rua Lorem, 999 - Ipsum</p>
+          </span>
+          <span>
+            +55 (01) 1234-5678
+          </span>
+          <span>
+            <a href="">Ver horarios</a>
+          </span>
+        </div>
+
+        <div class="titulo">
+          <h1 data-aos="zoom-out-down" data-aos-duration="600">Praesent<br> luctus</h1>
+          <p data-aos="fade-up" data-aos-duration="800">Nullam consectetur, ligula in facilisis dapibus, purus erat sodales enim</p>
+        </div>
+      </div>
+    </div>
+
+
+
+    <section class="produtos background-medio">
+      <div class="produtos-container">
+        <div class="col1-produtos">
+
+          <div class="titulos">
+            <h2 data-aos="fade-right" data-aos-duration="800">Mais pedidos</h2>
+            <a href="" data-aos="fade-left" data-aos-duration="800">Ver produtos</a>
+          </div>
+
+
+          <div class="btns-cards">
+            <button class="js-btn-anterior" onclick="mudarSlide(-1)">
+              <p>‹</p>
+            </button>
+            <button class="js-btn-posterior" onclick="mudarSlide(1)">
+              <p>›</p>
+            </button>
+          </div>
+
+
+          <div class="card-cafe ativo" data-aos="zoom-in" data-aos-duration="800">
+            <img src="img/cafe1.png" alt="café 1">
+            <div class="conteudo-card">
+              <h3>Donec faucibus </h3>
+              <p class="card-texto">Vivamus laoreet enim mauris</p>
+              <div class="preco">
+                <p class="rs">r$</p>
+                <p>10,00</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-cafe" data-aos="zoom-in" data-aos-duration="800">
+            <img src="img/cafe2.png" alt="café 1">
+            <div class="conteudo-card">
+              <h3>Lorem ipsum</h3>
+              <p class="card-texto">Morbi sit amet porttitor </p>
+              <div class="preco">
+                <p class="rs">r$</p>
+                <p>7,00</p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="card-cafe" data-aos="zoom-in" data-aos-duration="800">
+            <img src="img/cafe3.png" alt="café 1">
+            <div class="conteudo-card">
+              <h3>Curabitur tristique</h3>
+              <p class="card-texto">Lorem ipsum dolor sit amet</p>
+              <div class="preco">
+                <p class="rs">r$</p>
+                <p>13,00</p>
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+
+        <div class="col2-produtos">
+          <img src="img/fundo30.jpg" alt="">
+        </div>
+      </div>
+    </section>
+
+    <section class="section-loja background-claro">
+
+      <div class="container-loja">
+        <div class="col1-loja">
+          <div class="titulos">
+            <h2 data-aos="fade-left" data-aos-duration="800">A Loja</h2>
+            <a href="" data-aos="fade-right" data-aos-duration="800">Ver sobre</a>
+          </div>
+
+          <ul>
+            <li data-aos="zoom-in" data-aos-duration="800">Lorem ipsum dolor sit amet</li>
+            <li data-aos="zoom-in" data-aos-duration="700">Lorem ipsum dolor sit amet</li>
+            <li data-aos="zoom-in" data-aos-duration="600">Lorem ipsum dolor sit amet</li>
+          </ul>
+        </div>
+
+        <div class="col2-loja">
+          <img src="img/fundo3.jpg" alt="">
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section-contato background-medio">
+
+      <div>
+        <div class="titulos">
+          <h2 data-aos="zoom-in" data-aos-duration="800">Contato</h2>
+        </div>
+
+        <form>
+          <label for="nome">nome</label>
+          <input type="text" name="nome" id="nome" placeholder="nome">
+
+          <label for="email">email</label>
+          <input type="text" name="email" id="email" placeholder="email">
+
+          <label for="assunto">titulo do assunto</label>
+          <input type="text" name="assunto" id="assunto" placeholder="assunto">
+
+          <label for="mensagem">mensagem</label>
+          <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="mensagem"></textarea>
+
+          <label for="submit">Enviar</label>
+          <button type="submit" id="submit">
+            <p>›</p>
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container-footer">
+        <div class="menu-footer">
+          <h3>Menu</h3>
+          <nav>
+            <a href="">Home</a>
+            <a href="">Produtos</a>
+            <a href="">A loja</a>
+            <a href="">Contato</a>
+          </nav>
+        </div>
+
+        <div class="contato-footer">
+          <h3>Contato</h3>
+          <div>
+            <p>Fortaleza - CE</p>
+            <p>Rua Lorem, 999 - Ipsum</p>
+            <p>contato@contato.com</p>
+            <p>+55 (01) 1234-5678</p>
+          </div>
+        </div>
+
+        <div class="assine-footer">
+          <h3>Receba promoçoes e novidades no email!</h3>
+          <form>
+            <label for="assine">Email para assinar</label>
+            <input type="text" name="assine" id="assine" placeholder="email">
+            <label for="assinar">Enviar promoçoes</label>
+            <button type="submit" id="assinar">
+              <p>›</p>
+            </button>
+          </form>
+        </div>
+
+        <div class="copyright">
+          <span>Copyright &copy; 2021 </span>
+          <a href="">Ariane Morelato</a>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
