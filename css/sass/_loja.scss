@@ -3,6 +3,7 @@
   z-index: 10;
   position: relative;
   overflow: hidden;
+  background: $preto;
   ul {
     li {
       list-style: none;
@@ -15,18 +16,19 @@
         content: "●";
         color: $secundaria;
         position: absolute;
-        font-size: 10px;
+        font-size: 14px;
         left: -50px;
         top: 22px;
       }
     }
   }
   .col1-loja {
-    padding-top: 100px;
-    padding-bottom: 100px;
     order: 2;
     padding-left: 80px;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   .col2-loja {
     width: 100%;

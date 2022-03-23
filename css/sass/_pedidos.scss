@@ -1,6 +1,7 @@
 .produtos {
   position: relative;
   z-index: 2;
+  background: $preto;
   .produtos-container {
     padding: calc((100% - 990px) / 2);
     padding-right: 0px;
@@ -11,8 +12,9 @@
     grid-gap: 50px;
     .col1-produtos {
       padding-left: 15px;
-      padding-top: 100px;
-      padding-bottom: 150px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
     .col2-produtos {
       height: 100%;
@@ -29,9 +31,6 @@
     .produtos-container {
       grid-template-columns: auto;
       grid-gap: 50px;
-      .col1-produtos {
-        padding-bottom: 100px;
-      }
       .col2-produtos {
         height: 300px;
       }
@@ -44,78 +43,42 @@
 }
 
 .card-cafe {
-  border: 2px solid $secundaria;
-  margin: 0 auto;
-  background: $cinza2;
+  border: 2px solid $cinza;
+  margin-right: auto;
+  margin-top: 30px;
   position: relative;
   text-align: left;
-  border-radius: 10px;
-  max-width: 400px;
+  width: fit-content;
+  border-radius: 3px;
   color: $branco;
-  box-shadow: 0px 0px 25px 3px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 0px 60px 3px rgba(0, 0, 0, 0.85);
+  max-width: 400px;
   img {
     width: 120px;
     position: absolute;
-    left: -30px;
-    top: -30px;
+    left: -20px;
+    top: -20px;
   }
   h3 {
     text-align: left;
-    font-size: 16px;
-    padding-left: 110px;
-    font-weight: 700px;
+    font-size: 18px;
+    font-weight: 800;
     margin-bottom: 10px;
   }
   .card-texto {
-    padding-left: 110px;
-    font-size: 11px;
+    font-size: 14px;
   }
   .conteudo-card {
     position: relative;
     overflow: hidden;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    border-radius: 5px;
-    .preco {
-      cursor: pointer;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      background: $secundaria;
-      border-radius: 50%;
-      width: 80px;
-      height: 80px;
-      margin-left: 110px;
-      position: absolute;
-      right: -50px;
-      bottom: -50px;
-      transition: all 0.5s ease;
-      p {
-        color: $secundaria;
-      }
-      .rs {
-        position: absolute;
-        font-weight: 700;
-        top: -10px;
-        left: -10px;
-      }
-      &:hover {
-        width: 200px;
-        height: 200px;
-        padding-right: 20px;
-        p {
-          color: $preto;
-          font-weight: bold;
-        }
-        .rs {
-          position: relative;
-          top: 0;
-          left: 0;
-          margin-right: 10px;
-        }
-      }
-    }
+    padding: 20px 40px 20px 130px;
+  }
+  .preco {
+    padding-top: 10px;
+    text-align: right;
+    color: $secundaria;
+    font-weight: 300;
+    font-size: 18px;
   }
   @include d(mobile) {
     max-width: 320px;
@@ -136,24 +99,23 @@
 .btns-cards {
   text-align: right;
   max-width: 400px;
-  margin-bottom: 10px;
-  margin-left: auto;
+  margin-top: 10px;
   margin-right: auto;
+  border: 2px solid $cinza;
+  order: 2;
   button {
-    border: 2px solid $secundaria;
-    border-radius: 50%;
     background: transparent;
     width: 30px;
     height: 30px;
     cursor: pointer;
-    font-size: 25px;
+    font-size: 30px;
     transition: all 0.2s ease;
     p {
       margin-top: -4px;
       color: $secundaria;
     }
     &:hover {
-      background: $preto;
+      background: $cinza;
     }
   }
   @include d(mobile) {
@@ -168,7 +130,7 @@
   }
   a {
     color: hsla(40, 8%, 69%, 0.6);
-    font-size: 11px;
+    font-size: 14px;
     margin-top: 5px;
     transition: all 0.5s ease;
     &:hover {

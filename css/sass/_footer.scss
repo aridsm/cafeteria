@@ -49,13 +49,13 @@ footer {
         background: $secundaria;
         width: 30px;
         height: 30px;
-        font-weight: 700;
+        font-weight: 300;
         border: 0px;
         cursor: pointer;
         margin-top: 7px;
         p {
           color: $preto;
-          font-size: 25px;
+          font-size: 24px;
           margin-top: -3px;
         }
       }
@@ -65,7 +65,7 @@ footer {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      font-size: 11px;
+      font-size: 14px;
       padding: 20px 5px;
       margin-top: 30px;
       border-top: 2px solid $cinza;
