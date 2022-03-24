@@ -1,55 +1,37 @@
 .section-loja {
-  position: relative;
-  z-index: 10;
-  position: relative;
-  overflow: hidden;
-  background: $preto;
-  ul {
-    li {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      padding: 20px 0;
-      color: $branco;
-      position: relative;
-      &:before {
-        content: "●";
-        color: $secundaria;
-        position: absolute;
-        font-size: 14px;
-        left: -50px;
-        top: 22px;
-      }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 70px 0;
+  ul li {
+    list-style: none;
+    padding: 20px 0;
+    color: $branco;
+    position: relative;
+    &:before {
+      content: "●";
+      color: $secundaria;
+      position: absolute;
+      font-size: 14px;
+      left: -50px;
+      top: 22px;
     }
   }
+
   .col1-loja {
     order: 2;
-    padding-left: 80px;
-    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
   .col2-loja {
-    width: 100%;
-    object-fit: cover;
-
+    max-width: 450px;
     img {
       width: 100%;
       height: 100%;
       object-fit: cover;
       filter: contrast(75%);
     }
-  }
-  .container-loja {
-    padding: calc((100% - 990px) / 2);
-    padding-left: 0px;
-    padding-top: 0;
-    padding-bottom: 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 50px;
-    width: 100%;
   }
   @include d(medio) {
     .container-loja {

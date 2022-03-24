@@ -1,5 +1,4 @@
 
-
 function functMenu (){
 const menuMobile = document.querySelector('.btn-mobile')
 const navMobile = document.querySelector('.js-menu-mobile')
@@ -12,11 +11,6 @@ menuMobile.addEventListener('click', menuAtivo)
 }
 
 functMenu()
-
-
-
-
-
 
 
 var numSlide = 1;

@@ -7,9 +7,18 @@ body {
 
 main {
   margin-left: 123px;
+  background: $preto;
+  background-image: url("../../checkered-pattern.png");
   @include d(tablet) {
     margin-left: 0px;
   }
+}
+
+.container-sections {
+  max-width: 860px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .background-escuro {

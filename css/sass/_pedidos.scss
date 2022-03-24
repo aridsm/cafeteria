@@ -1,29 +1,23 @@
 .produtos {
   position: relative;
   z-index: 2;
-  background: $preto;
-  .produtos-container {
-    padding: calc((100% - 990px) / 2);
-    padding-right: 0px;
-    padding-top: 0;
-    padding-bottom: 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 50px;
-    .col1-produtos {
-      padding-left: 15px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-    .col2-produtos {
+  padding: 70px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .col1-produtos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .col2-produtos {
+    max-width: 350px;
+
+    img {
+      width: 100%;
       height: 100%;
-      img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        filter: contrast(85%);
-      }
+      object-fit: cover;
+      filter: contrast(85%);
     }
   }
 
@@ -43,18 +37,10 @@
 }
 
 .card-cafe {
-  border: 2px solid $cinza;
   margin-right: auto;
-  margin-top: 30px;
-  position: relative;
-  text-align: left;
-  width: fit-content;
-  border-radius: 3px;
-  color: $branco;
-  box-shadow: 0px 0px 60px 3px rgba(0, 0, 0, 0.85);
-  max-width: 400px;
+  @include mini-container;
   img {
-    width: 120px;
+    width: 130px;
     position: absolute;
     left: -20px;
     top: -20px;
@@ -62,22 +48,17 @@
   h3 {
     text-align: left;
     font-size: 18px;
-    font-weight: 800;
+    font-weight: 600;
     margin-bottom: 10px;
   }
-  .card-texto {
-    font-size: 14px;
-  }
   .conteudo-card {
-    position: relative;
-    overflow: hidden;
     padding: 20px 40px 20px 130px;
   }
   .preco {
     padding-top: 10px;
     text-align: right;
     color: $secundaria;
-    font-weight: 300;
+    font-weight: 600;
     font-size: 18px;
   }
   @include d(mobile) {
@@ -97,23 +78,19 @@
 }
 
 .btns-cards {
-  text-align: right;
-  max-width: 400px;
   margin-top: 10px;
   margin-right: auto;
   border: 2px solid $cinza;
   order: 2;
+
   button {
     background: transparent;
-    width: 30px;
-    height: 30px;
     cursor: pointer;
     font-size: 30px;
     transition: all 0.2s ease;
-    p {
-      margin-top: -4px;
-      color: $secundaria;
-    }
+    border: none;
+    padding: 5px 20px;
+    color: $secundaria;
     &:hover {
       background: $cinza;
     }
@@ -124,7 +101,7 @@
 }
 
 .titulos {
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   h2 {
     text-shadow: 0px 0px 13px rgba(0, 0, 0, 0.35);
   }
@@ -137,11 +114,4 @@
       color: hsla(40, 8%, 69%, 1);
     }
   }
-}
-
-.card-cafe {
-  display: none;
-}
-.card-cafe.ativo {
-  display: block;
 }

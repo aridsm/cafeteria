@@ -24,3 +24,33 @@ $secundaria: #dbba5f;
     }
   }
 }
+
+@mixin mini-container {
+  padding: 10px;
+  margin: 0;
+  font-family: inherit;
+  color: $branco;
+  border: 2px solid $cinza;
+  background: transparent;
+  outline: none;
+  border-radius: 3px;
+  font-size: 16px;
+  box-shadow: 0px 0px 60px 3px rgba(0, 0, 0, 0.55);
+}
+
+@mixin btn-amarelo {
+  padding: 10px 20px;
+  border: 2px solid $secundaria;
+  color: $secundaria;
+  font-weight: 600;
+  background: transparent;
+  grid-column: 2;
+  font-family: inherit;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  border-radius: 3px;
+  &:hover {
+    background: $secundaria;
+    color: $preto;
+  }
+}

@@ -67,15 +67,7 @@
     justify-content: space-between;
     align-items: center;
     a {
-      padding: 10px 20px;
-      border: 2px solid $secundaria;
-      color: $secundaria;
-      font-weight: 800;
-      transition: all 0.5s ease;
-      &:hover {
-        background: $secundaria;
-        color: $preto;
-      }
+      @include btn-amarelo;
     }
     span {
       flex: 1;
