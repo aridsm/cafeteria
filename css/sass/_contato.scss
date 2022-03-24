@@ -8,7 +8,7 @@
   form {
     margin: 0 auto;
     display: grid;
-    grid-template-areas: "nome email" "titulo titulo" "mensagem mensagem";
+    grid-template-areas: "nome email" "titulo titulo" "mensagem mensagem" ". botao";
     grid-gap: 20px;
     max-width: 500px;
     #nome {
@@ -24,21 +24,11 @@
       grid-area: mensagem;
     }
     #submit {
+      grid-area: botao;
       @include btn-amarelo;
     }
     @include d(mobile) {
-      max-width: 320px;
-      width: 360px;
-      input {
-        width: 100%;
-      }
-      #submit {
-        position: relative;
-        bottom: 0px;
-        right: 0px;
-        margin-left: auto;
-        grid-column: 1 / -1;
-      }
+      grid-template-areas: "nome" "email" "titulo" "mensagem" "botao";
     }
   }
 }

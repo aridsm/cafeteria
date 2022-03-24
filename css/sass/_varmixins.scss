@@ -1,5 +1,3 @@
-// cores e fontes
-
 $preto: #141414;
 $cinza: #222225;
 $cinza2: #363636;
@@ -7,11 +5,9 @@ $titulos: #d2cabc;
 $branco: #b6b2aa;
 $secundaria: #dbba5f;
 
-/* responsivo */
-
 @mixin d($device) {
   @if $device == mobile {
-    @media (max-width: 650px) {
+    @media (max-width: 750px) {
       @content;
     }
   } @else if $device == tablet {
@@ -19,7 +15,7 @@ $secundaria: #dbba5f;
       @content;
     }
   } @else if $device == medio {
-    @media (max-width: 1150px) {
+    @media (max-width: 1350px) {
       @content;
     }
   }
@@ -44,7 +40,6 @@ $secundaria: #dbba5f;
   color: $secundaria;
   font-weight: 600;
   background: transparent;
-  grid-column: 2;
   font-family: inherit;
   cursor: pointer;
   transition: all 0.5s ease;

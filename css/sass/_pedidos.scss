@@ -12,7 +12,7 @@
   }
   .col2-produtos {
     max-width: 350px;
-
+    margin-left: 30px;
     img {
       width: 100%;
       height: 100%;
@@ -20,29 +20,25 @@
       filter: contrast(85%);
     }
   }
-
-  @include d(medio) {
-    .produtos-container {
-      grid-template-columns: auto;
-      grid-gap: 50px;
-      .col2-produtos {
-        height: 300px;
-      }
-    }
-    .titulos {
-      text-align: center;
-      margin-bottom: 40px;
+  @include d(mobile) {
+    flex-direction: column;
+    .col2-produtos {
+      margin-left: 0;
+      min-width: 100%;
+      height: 250px;
+      margin-top: 70px;
     }
   }
 }
 
 .card-cafe {
   margin-right: auto;
+  min-width: 400px;
   @include mini-container;
   img {
     width: 130px;
     position: absolute;
-    left: -20px;
+    left: -10px;
     top: -20px;
   }
   h3 {
@@ -52,7 +48,7 @@
     margin-bottom: 10px;
   }
   .conteudo-card {
-    padding: 20px 40px 20px 130px;
+    padding: 10px 20px 20px 130px;
   }
   .preco {
     padding-top: 10px;
@@ -62,17 +58,22 @@
     font-size: 18px;
   }
   @include d(mobile) {
-    max-width: 320px;
+    min-width: 300px;
+    text-align: center;
     img {
-      width: 85px;
-      top: -20px;
-      left: -25px;
+      width: 150px;
+      position: absolute;
+      left: calc(50% - 75px);
+      top: -45px;
     }
     h3 {
-      padding-left: 70px;
+      text-align: center;
     }
-    .card-texto {
-      padding-left: 55px;
+    .conteudo-card {
+      padding: 120px 20px 20px 20px;
+    }
+    .preco {
+      text-align: center;
     }
   }
 }
@@ -96,7 +97,9 @@
     }
   }
   @include d(mobile) {
-    max-width: 320px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
