@@ -26,11 +26,17 @@
   }
   .col2-loja {
     max-width: 450px;
+    position: relative;
     img {
       width: 100%;
       height: 100%;
       object-fit: cover;
       filter: contrast(75%);
+    }
+    &::before {
+      @include circulo(100px, 100px);
+      bottom: -40px;
+      left: -40px;
     }
   }
   @include d(medio) {

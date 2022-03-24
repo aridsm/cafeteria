@@ -54,3 +54,13 @@ $secundaria: #dbba5f;
     color: $preto;
   }
 }
+
+@mixin circulo($width, $height) {
+  content: "";
+  border: 2px solid $secundaria;
+  border-radius: 50%;
+  width: $width;
+  height: $height;
+  position: absolute;
+  display: block;
+}
