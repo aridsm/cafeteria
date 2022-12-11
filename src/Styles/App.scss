@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Koulen&family=Montserrat:wght@500&display=swap");
+
+@import "./Normalize.scss";
+@import "./VarMixins.scss";
+
+/* components */
+@import "./Components/About.scss";
+
+body {
+  background: $c-bg;
+  color: $c-txt;
+  font-family: "Montserrat", sans-serif;
+}
+
+h1,
+h2 {
+  font-family: "Koulen", cursive;
+}
