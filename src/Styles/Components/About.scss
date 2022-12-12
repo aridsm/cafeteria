@@ -1,0 +1,30 @@
+@import "../VarMixins.scss";
+
+.about {
+  background: $c-bg-2;
+}
+
+.h2::before {
+  @include numberH2(1);
+}
+
+.h2 {
+  margin-bottom: 1.5rem;
+}
+
+.paragraph + .paragraph {
+  margin-top: 1.5rem;
+  margin-bottom: 3rem;
+}
+.paragraph {
+  max-width: 450px;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.img-about {
+  max-width: 550px;
+  border-radius: $radius;
+}

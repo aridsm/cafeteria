@@ -3,9 +3,6 @@
 @import "./Normalize.scss";
 @import "./VarMixins.scss";
 
-/* components */
-@import "./Components/About.scss";
-
 body {
   background: $c-bg;
   color: $c-txt;
@@ -13,6 +10,48 @@ body {
 }
 
 h1,
-h2 {
+h2,
+h3 {
   font-family: "Koulen", cursive;
+  font-weight: 400;
+  line-height: 100%;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+.btn {
+  background: $c-s-1;
+  color: $c-s-3;
+  border-radius: $radius;
+  padding: 0.6rem 2rem;
+  font-family: "Koulen", cursive;
+  font-weight: 400;
+  font-size: 1.2rem;
+  transition: 0.1s;
+}
+
+.btn:hover {
+  color: $c-s-2;
+}
+
+.btn:active {
+  transform: scale(0.95);
+}
+
+.section-pd {
+  padding: 5rem 0;
+}
+
+.container {
+  max-width: 1150px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.paragraph {
+  color: $c-txt-2;
+  line-height: 160%;
 }

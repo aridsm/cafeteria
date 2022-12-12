@@ -8,3 +8,16 @@ $c-s-3: #9d814c;
 
 $c-txt: #dfddd8;
 $c-txt-2: rgba(223, 221, 216, 0.5);
+
+$radius: 3px;
+
+@mixin numberH2($number) {
+  content: "0" + $number + ".";
+  color: $c-s-1;
+  font-family: "Koulen", cursive;
+  font-weight: 400;
+  display: block;
+  font-size: 1rem;
+  line-height: 100%;
+  margin-bottom: 0.8rem;
+}
