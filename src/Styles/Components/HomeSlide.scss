@@ -1,0 +1,71 @@
+@import "../VarMixins.scss";
+
+.slide {
+  display: flex;
+}
+
+.slide {
+  margin-left: 2rem;
+  .slide-content {
+    position: relative;
+    display: flex;
+    .prod-name {
+      text-align: right;
+      margin-top: 6rem;
+      span {
+        display: block;
+        @include fontTitles(m);
+        margin-bottom: 0.5rem;
+      }
+      p {
+        color: $c-txt-2;
+        max-width: 180px;
+      }
+    }
+    .img-container {
+      position: relative;
+      .price {
+        position: absolute;
+        bottom: 3.5rem;
+        left: -1.5rem;
+        background: $c-s-1;
+        height: 5rem;
+        width: 5rem;
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+        color: $c-s-3;
+        box-shadow: 0 0 0 3px $c-s-3, 0 0 0 5px $c-s-1;
+        @include fontTitles(m);
+      }
+      img {
+        width: 410px;
+      }
+    }
+  }
+
+  .buttons-list {
+    display: flex;
+    flex-direction: column;
+    margin-left: 4rem;
+    font-size: 20px;
+    color: $c-txt-2;
+    button + button {
+      margin-top: 3.5rem;
+    }
+    .arrow {
+      height: 2rem;
+      width: 2rem;
+      border: 1px solid currentColor;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      svg {
+        width: 0.6rem;
+      }
+    }
+    .arrow-down {
+      transform: rotate(180deg);
+    }
+  }
+}

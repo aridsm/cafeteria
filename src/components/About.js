@@ -23,6 +23,7 @@ const About = () => {
         </div>
         <img src={img} alt="coffee" className="img-about" />
       </div>
+      <div className="ornament"></div>
     </section>
   );
 };

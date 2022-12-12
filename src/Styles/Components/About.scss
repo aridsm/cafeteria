@@ -2,29 +2,39 @@
 
 .about {
   background: $c-bg-2;
-}
+  position: relative;
+  .h2::before {
+    @include numberH2(1);
+  }
 
-.h2::before {
-  @include numberH2(1);
-}
+  .h2 {
+    margin-bottom: 1.5rem;
+  }
 
-.h2 {
-  margin-bottom: 1.5rem;
-}
+  .paragraph + .paragraph {
+    margin-top: 1.5rem;
+    margin-bottom: 3rem;
+  }
+  .paragraph {
+    max-width: 450px;
+  }
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
 
-.paragraph + .paragraph {
-  margin-top: 1.5rem;
-  margin-bottom: 3rem;
-}
-.paragraph {
-  max-width: 450px;
-}
-.container {
-  display: flex;
-  justify-content: space-between;
-}
+  .img-about {
+    max-width: 550px;
+    border-radius: $radius;
+    z-index: 2;
+  }
 
-.img-about {
-  max-width: 550px;
-  border-radius: $radius;
+  .ornament {
+    position: absolute;
+    height: 7rem;
+    width: 20%;
+    background: $c-s-1;
+    right: 0;
+    bottom: 0;
+  }
 }

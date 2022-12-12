@@ -1,0 +1,24 @@
+@import "../VarMixins.scss";
+
+.header {
+  position: absolute;
+  width: calc(100% - 14rem);
+  right: 0;
+  top: 2rem;
+  nav,
+  ul {
+    display: flex;
+    align-items: center;
+    height: 4rem;
+  }
+  ul {
+    color: $c-txt-2;
+    margin: 0 auto;
+    li + li {
+      margin-left: 3rem;
+    }
+  }
+  .logo {
+    @include fontTitles(m);
+  }
+}

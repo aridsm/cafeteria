@@ -1,0 +1,7 @@
+@import "../VarMixins.scss";
+
+.best-seller {
+  .h2::before {
+    @include numberH2(2);
+  }
+}

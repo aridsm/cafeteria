@@ -7,29 +7,21 @@ body {
   background: $c-bg;
   color: $c-txt;
   font-family: "Montserrat", sans-serif;
-}
-
-h1,
-h2,
-h3 {
-  font-family: "Koulen", cursive;
-  font-weight: 400;
-  line-height: 100%;
+  font-size: 17px;
 }
 
 h2 {
-  font-size: 3rem;
+  @include fontTitles(4rem);
 }
 
 .btn {
   background: $c-s-1;
   color: $c-s-3;
   border-radius: $radius;
-  padding: 0.6rem 2rem;
-  font-family: "Koulen", cursive;
-  font-weight: 400;
-  font-size: 1.2rem;
   transition: 0.1s;
+  @include fontTitles(1.2rem);
+  padding: 1.1rem 1.9rem;
+  letter-spacing: 0.5px;
 }
 
 .btn:hover {
@@ -54,4 +46,13 @@ h2 {
 .paragraph {
   color: $c-txt-2;
   line-height: 160%;
+}
+
+::-webkit-scrollbar {
+  background: $c-bg;
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $c-s-1;
 }

@@ -1,10 +1,32 @@
 import React from "react";
+import "../Styles/Components/Header.scss";
 
 const Header = () => {
   return (
-    <div>
-      <a href="">link</a>
-    </div>
+    <header className="header">
+      <nav className="container">
+        <a href="/" className="logo">
+          Coffee
+        </a>
+        <ul>
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="/">Products</a>
+          </li>
+          <li>
+            <a href="/">The store</a>
+          </li>
+          <li>
+            <a href="/">Contact</a>
+          </li>
+        </ul>
+        <a href="/" className="btn">
+          Start shopping
+        </a>
+      </nav>
+    </header>
   );
 };
 
