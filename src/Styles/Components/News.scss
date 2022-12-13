@@ -1,0 +1,99 @@
+@import "../VarMixins.scss";
+
+.news {
+  background: $c-bg-2;
+  .h2::before {
+    @include numberH2(3);
+  }
+
+  .h2,
+  .paragraph {
+    text-align: center;
+  }
+
+  .news-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 14rem 14rem;
+    grid-gap: 1rem;
+    margin-top: 5rem;
+  }
+
+  .news-1 {
+    grid-column: 1;
+    grid-row: 1 / 3;
+    background-color: #292a2c;
+    background-image: url("../../assets/news1-img.png");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    border-radius: $radius;
+    padding: 2rem;
+    h3 {
+      @include fontTitles(4rem);
+      max-width: 20rem;
+    }
+    .btn {
+      margin-top: 3rem;
+    }
+  }
+
+  .news-2 {
+    background-image: url("../../assets/bg-news-2.png");
+    background-size: cover;
+    border-radius: $radius;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    h3 {
+      @include fontTitles(4rem);
+      color: $c-s-3;
+    }
+    .price {
+      background: $c-bg-2;
+      border-radius: 50%;
+      width: 6rem;
+      height: 6rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 0 0 2px $c-s-1, 0 0 0 5px $c-bg-2;
+      .old-price {
+        @include fontTitles(1rem);
+        text-decoration: line-through;
+      }
+      .new-price {
+        @include fontTitles(1.6rem);
+      }
+    }
+    .imgs {
+      .img-1 {
+        width: 6rem;
+        margin-right: -2em;
+        margin-bottom: 0.5rem;
+      }
+      .img-2 {
+        position: relative;
+        z-index: 2;
+      }
+    }
+  }
+
+  .news-3 {
+    background-image: url("../../assets/img-news-3.png"),
+      url("../../assets/bg-news-3.png");
+    background-size: 25rem, cover;
+    background-repeat: no-repeat;
+    background-position: -10rem, center;
+    border-radius: $radius;
+    padding: 2rem;
+    h3 {
+      @include fontTitles(3.5rem);
+      color: $c-bg-2;
+      text-align: right;
+      max-width: 20rem;
+      margin-left: auto;
+    }
+  }
+}

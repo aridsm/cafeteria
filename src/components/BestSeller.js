@@ -12,35 +12,35 @@ import { ReactComponent as ArrowSvg } from "../assets/arrow.svg";
 
 const products = [
   {
-    name: "lorem ipsum 1",
+    name: "Cras sed",
     description: "Feugiat nibh sed pulvinar proin",
     price: "$ 7.99",
     cal: "185kcal",
     img: img1,
   },
   {
-    name: "lorem ipsum 2",
+    name: "Consequat",
     description: "Nibh tellus molestie nunc non",
     price: "$ 7.99",
     cal: "185kcal",
     img: img2,
   },
   {
-    name: "lorem ipsum3",
+    name: "Sollicitudin",
     description: "Id porta nibh venenatis cras sed",
     price: "$ 7.99",
     cal: "185kcal",
     img: img3,
   },
   {
-    name: "lorem ipsum4",
+    name: "Amet",
     description: "Et pharetra pharetra massa massa ultricies",
     price: "$ 7.99",
     cal: "185kcal",
     img: img4,
   },
   {
-    name: "lorem ipsum5",
+    name: "Blandit",
     description: "Feugiat nibh sed pulvinar proin",
     price: "$ 7.99",
     cal: "185kcal",
@@ -65,7 +65,7 @@ const BestSeller = () => {
         <div className="header-best-seller">
           <div>
             <h2 className="h2">Our best seller</h2>
-            <p>Quis hendrerit dolor magna</p>
+            <p className="paragraph">Quis hendrerit dolor magna</p>
           </div>
           <a href="/" className="btn">
             See all
