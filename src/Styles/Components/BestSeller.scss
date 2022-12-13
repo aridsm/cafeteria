@@ -64,4 +64,8 @@
     transform: rotate(90deg);
     right: -3rem;
   }
+  background: url("../../assets/coffee-grain.png"),
+    url("../../assets/coffee-grain-2.png");
+  background-repeat: no-repeat;
+  background-position: 30% -5%, 90% 110%;
 }
