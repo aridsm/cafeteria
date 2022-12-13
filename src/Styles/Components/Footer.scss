@@ -1,0 +1,52 @@
+@import "../VarMixins.scss";
+
+.footer {
+  background: $c-bg-2;
+  padding: 2rem 0;
+  .container {
+    display: flex;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    padding-bottom: 2rem;
+    > * {
+      flex: 1;
+    }
+    section + section {
+      padding-left: 2rem;
+      margin-left: 2rem;
+      border-left: 1px solid rgba(255, 255, 255, 0.05);
+    }
+  }
+  h2,
+  .logo {
+    @include fontTitles(m);
+    margin-bottom: 1rem;
+  }
+  .menu {
+    nav {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 1rem;
+      color: $c-txt-2;
+    }
+  }
+  .coffee p {
+    color: $c-txt-2;
+  }
+  address {
+    color: $c-txt-2;
+    font-style: normal;
+    span {
+      display: block;
+      + span {
+        margin-top: 1rem;
+      }
+    }
+  }
+  .by {
+    padding-top: 2rem;
+    text-align: center;
+    margin: auto;
+    display: block;
+    color: $c-txt-2;
+  }
+}

@@ -5,6 +5,7 @@ import About from "./components/About";
 import BestSeller from "./components/BestSeller";
 import News from "./components/News";
 import Subscribe from "./components/Subscribe";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <BestSeller />
       <News />
       <Subscribe />
+      <Footer />
     </div>
   );
 }
