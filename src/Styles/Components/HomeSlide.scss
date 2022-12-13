@@ -54,15 +54,7 @@
       margin-top: 3.5rem;
     }
     .arrow {
-      height: 2rem;
-      width: 2rem;
-      border: 1px solid currentColor;
-      border-radius: 50%;
-      display: grid;
-      place-items: center;
-      svg {
-        width: 0.6rem;
-      }
+      @include arrow;
     }
     .arrow-down {
       transform: rotate(180deg);

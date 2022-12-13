@@ -4,6 +4,15 @@
   .h2::before {
     @include numberH2(2);
   }
+  .header-best-seller {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .slider {
+    margin-top: 3rem;
+    position: relative;
+  }
   .slide-item {
     padding: 2rem;
     text-align: center;
@@ -34,5 +43,25 @@
       display: block;
       margin: 0.5rem 0 2rem 0;
     }
+  }
+  .slider-container {
+    position: relative;
+  }
+  .arrow {
+    @include arrow;
+    position: absolute;
+    top: calc(50% - 1rem);
+    color: $c-txt-2;
+    &:hover {
+      color: $c-txt;
+    }
+  }
+  .arrow-left {
+    transform: rotate(-90deg);
+    left: -3rem;
+  }
+  .arrow-right {
+    transform: rotate(90deg);
+    right: -3rem;
   }
 }

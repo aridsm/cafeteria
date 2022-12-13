@@ -9,8 +9,8 @@ const Home = () => {
     <section className="home">
       <div className="coffee-shop">
         <div className="coffee">
-          {coffee.map((letter) => (
-            <span key={letter}>{letter}</span>
+          {coffee.map((letter, index) => (
+            <span key={index}>{letter}</span>
           ))}
         </div>
         <div className="shop">shop</div>

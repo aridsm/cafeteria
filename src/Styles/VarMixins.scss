@@ -44,3 +44,15 @@ $radius: 3px;
   top: -3rem;
   left: 0;
 }
+
+@mixin arrow {
+  height: 2rem;
+  width: 2rem;
+  border: 1px solid currentColor;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  svg {
+    width: 0.6rem;
+  }
+}
