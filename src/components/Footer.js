@@ -1,5 +1,6 @@
 import React from "react";
 import "../Styles/Components/Footer.scss";
+import SocialMedia from "./SocialMedia";
 
 const Footer = () => {
   return (
@@ -7,7 +8,10 @@ const Footer = () => {
       <div className="container">
         <section className="coffee">
           <div className="logo">Coffee</div>
-          <p>Scelerisque felis imperdiet proin fermentum leo. </p>
+          <p className="paragraph">
+            Scelerisque felis imperdiet proin fermentum leo.{" "}
+          </p>
+          <SocialMedia />
         </section>
         <section className="menu">
           <h2>Menu</h2>

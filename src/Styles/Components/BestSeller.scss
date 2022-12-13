@@ -1,6 +1,7 @@
 @import "../VarMixins.scss";
 
 .best-seller {
+  padding: 6rem 0;
   .h2::before {
     @include numberH2(2);
   }
@@ -10,7 +11,7 @@
     justify-content: space-between;
   }
   .slider {
-    margin-top: 1.5rem;
+    margin-top: 4rem;
     position: relative;
   }
   .slide-item {

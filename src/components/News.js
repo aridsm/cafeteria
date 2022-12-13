@@ -33,6 +33,9 @@ const News = () => {
             <h3>Morbi blandit cursus </h3>
           </a>
         </div>
+        <a href="/" className="btn see-more-btn">
+          See more
+        </a>
       </div>
     </section>
   );

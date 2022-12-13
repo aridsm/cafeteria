@@ -16,8 +16,7 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 14rem 14rem;
     grid-gap: 1rem;
-
-    margin-top: 6rem;
+    margin-top: 4rem;
   }
 
   .news-1 {
@@ -96,5 +95,10 @@
       max-width: 20rem;
       margin-left: auto;
     }
+  }
+
+  .see-more-btn {
+    margin: 3rem auto 0 auto;
+    display: table;
   }
 }

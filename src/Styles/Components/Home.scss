@@ -36,7 +36,6 @@
   }
   .home-content {
     flex: 1;
-    padding: 0 3rem;
     background: url("../../assets/coffee-grain.png"),
       url("../../assets/coffee-grain-2.png"),
       url("../../assets/coffee-grain.png");
@@ -59,7 +58,7 @@
 
   .content {
     padding: 6rem 0 2rem 0;
-    margin: auto;
+    margin: auto 0;
   }
 
   h1 {
@@ -99,15 +98,5 @@
   }
   .flex-2 {
     align-items: flex-end;
-  }
-  .social-media {
-    display: flex;
-    align-items: center;
-    a + a {
-      margin-left: 2rem;
-    }
-    svg {
-      width: 1.2rem;
-    }
   }
 }

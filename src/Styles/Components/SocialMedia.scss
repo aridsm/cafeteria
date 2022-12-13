@@ -1,0 +1,12 @@
+@import "../VarMixins.scss";
+
+.social-media {
+  display: flex;
+  align-items: center;
+  a + a {
+    margin-left: 2rem;
+  }
+  svg {
+    width: 1.2rem;
+  }
+}

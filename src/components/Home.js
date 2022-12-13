@@ -1,9 +1,7 @@
 import React from "react";
 import "../Styles/Components/Home.scss";
 import HomeSlide from "./HomeSlide";
-import { ReactComponent as TwitterSvg } from "../assets/twitter.svg";
-import { ReactComponent as SvgFacebook } from "../assets/facebook.svg";
-import { ReactComponent as SvgInstagram } from "../assets/instagram.svg";
+import SocialMedia from "./SocialMedia";
 
 const coffee = ["c", "o", "f", "f", "e", "e"];
 
@@ -42,17 +40,7 @@ const Home = () => {
                 <p>Quis hendrerit dolor magna</p>
               </li>
             </ul>
-            <nav className="social-media">
-              <a href="/">
-                <TwitterSvg />
-              </a>
-              <a href="/">
-                <SvgFacebook />
-              </a>
-              <a href="/">
-                <SvgInstagram />
-              </a>
-            </nav>
+            <SocialMedia />
           </div>
         </div>
       </div>
