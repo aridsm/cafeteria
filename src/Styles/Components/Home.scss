@@ -34,22 +34,34 @@
       @include fontTitles(6rem);
     }
   }
-  .container {
-    padding-top: 6rem;
-    padding-bottom: 2rem;
-    border: 1px solid red;
+  .home-content {
+    flex: 1;
+    padding: 0 3rem;
     background: url("../../assets/coffee-grain.png"),
       url("../../assets/coffee-grain-2.png"),
       url("../../assets/coffee-grain.png");
     background-repeat: no-repeat;
-    background-position: 50% -10%, -10% 50%, 90% 120%;
+    background-position: 50% -10%, -5% 50%, 90% 110%;
   }
+  .container {
+    padding-top: 6rem;
+    padding-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+
   .flex {
     display: flex;
     justify-content: space-between;
-
-    padding: 6rem 0 2rem 0;
   }
+
+  .content {
+    padding: 6rem 0 2rem 0;
+    margin: auto;
+  }
+
   h1 {
     font-size: 4.2rem;
     @include fontTitles(4.5rem);
@@ -83,6 +95,19 @@
     p {
       color: $c-txt-2;
       max-width: 8rem;
+    }
+  }
+  .flex-2 {
+    align-items: flex-end;
+  }
+  .social-media {
+    display: flex;
+    align-items: center;
+    a + a {
+      margin-left: 2rem;
+    }
+    svg {
+      width: 1.2rem;
     }
   }
 }
