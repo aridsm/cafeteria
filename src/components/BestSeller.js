@@ -82,18 +82,10 @@ const BestSeller = () => {
             }}
             breakpoints={{
               200: {
-                slidesPerView: 1,
-                spaceBetween: 20,
-              },
-              530: {
                 slidesPerView: 2,
                 spaceBetween: 20,
               },
-              700: {
-                slidesPerView: 3,
-                spaceBetween: 20,
-              },
-              1000: {
+              910: {
                 slidesPerView: 4,
                 spaceBetween: 20,
               },
@@ -115,10 +107,18 @@ const BestSeller = () => {
               </SwiperSlide>
             ))}
           </Swiper>
-          <button onClick={prevSlideHandler} className="arrow arrow-left">
+          <button
+            onClick={prevSlideHandler}
+            className="arrow arrow-left"
+            title="slide anterior"
+          >
             <ArrowSvg />
           </button>
-          <button onClick={nextSlideHandler} className="arrow arrow-right">
+          <button
+            onClick={nextSlideHandler}
+            className="arrow arrow-right"
+            title="slide posterior"
+          >
             <ArrowSvg />
           </button>
         </div>

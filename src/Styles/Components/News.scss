@@ -19,6 +19,13 @@
     margin-top: 4rem;
   }
 
+  .news-1,
+  .news-2,
+  .news-3 {
+    border-radius: $radius;
+    padding: 2rem;
+  }
+
   .news-1 {
     grid-column: 1;
     grid-row: 1 / 3;
@@ -26,22 +33,15 @@
     background-image: url("../../assets/news1-img.png");
     background-repeat: no-repeat;
     background-position: bottom right;
-    border-radius: $radius;
-    padding: 2rem;
     h3 {
       @include fontTitles(4rem);
       max-width: 20rem;
-    }
-    .btn {
-      margin-top: 3rem;
     }
   }
 
   .news-2 {
     background-image: url("../../assets/bg-news-2.png");
     background-size: cover;
-    border-radius: $radius;
-    padding: 2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -59,6 +59,8 @@
       align-items: center;
       justify-content: center;
       box-shadow: 0 0 0 2px $c-s-1, 0 0 0 5px $c-bg-2;
+      margin-right: -3rem;
+      z-index: 2;
       .old-price {
         @include fontTitles(1rem);
         text-decoration: line-through;
@@ -86,13 +88,11 @@
     background-size: 25rem, cover;
     background-repeat: no-repeat;
     background-position: -10rem, center;
-    border-radius: $radius;
-    padding: 2rem;
     h3 {
       @include fontTitles(3.5rem);
       color: $c-bg-2;
       text-align: right;
-      max-width: 20rem;
+      max-width: 14rem;
       margin-left: auto;
     }
   }
@@ -100,5 +100,28 @@
   .see-more-btn {
     margin: 3rem auto 0 auto;
     display: table;
+  }
+}
+
+@media (max-width: 910px) {
+  .news {
+    .news-container {
+      grid-template-columns: auto;
+      grid-template-rows: repeat(3, 12rem);
+    }
+    .news-1 {
+      grid-row: 1;
+    }
+    .news-1,
+    .news-2,
+    .news-3 {
+      h3 {
+        @include fontTitles(2.6rem);
+        max-width: 12rem;
+      }
+    }
+    .news-1 {
+      background-size: 50%;
+    }
   }
 }

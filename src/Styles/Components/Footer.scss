@@ -21,6 +21,9 @@
     @include fontTitles(m);
     margin-bottom: 1rem;
   }
+  .paragraph {
+    margin-bottom: 2rem;
+  }
   .menu {
     nav {
       display: grid;
@@ -48,5 +51,22 @@
     margin: auto;
     display: block;
     color: $c-txt-2;
+  }
+}
+
+@media (max-width: 910px) {
+  .footer {
+    .container {
+      flex-direction: column;
+      section + section {
+        padding-left: 0;
+        margin-left: 0;
+        margin-top: 3rem;
+        border-left: none;
+      }
+      .paragraph {
+        margin-bottom: 1rem;
+      }
+    }
   }
 }

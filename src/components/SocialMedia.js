@@ -7,14 +7,14 @@ import { ReactComponent as SvgInstagram } from "../assets/instagram.svg";
 const SocialMedia = () => {
   return (
     <nav className="social-media">
-      <a href="/">
+      <a href="/" title="twitter">
         <TwitterSvg />
       </a>
-      <a href="/">
+      <a href="/" title="facebook">
         <SvgFacebook />
       </a>
       <a href="/">
-        <SvgInstagram />
+        <SvgInstagram title="instagram" />
       </a>
     </nav>
   );

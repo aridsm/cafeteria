@@ -72,7 +72,11 @@ const HomeSlide = () => {
       </Swiper>
 
       <div className="buttons-list">
-        <button className="arrow" onClick={prevSlideHandler}>
+        <button
+          className="arrow"
+          onClick={prevSlideHandler}
+          title="produto anterior"
+        >
           <ArrowSvg />
         </button>
         {coffeesList.map((coffee, index) => (
@@ -84,7 +88,11 @@ const HomeSlide = () => {
             0{index + 1}
           </button>
         ))}
-        <button className="arrow arrow-down" onClick={nextSlideHandler}>
+        <button
+          className="arrow arrow-down"
+          onClick={nextSlideHandler}
+          title="próximo produto"
+        >
           <ArrowSvg />
         </button>
       </div>

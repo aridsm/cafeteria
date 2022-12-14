@@ -12,9 +12,6 @@ const News = () => {
         <div className="news-container">
           <div className="news-1">
             <h3>Nibh tellus molestie nunc non</h3>
-            <a href="/" className="btn">
-              See more
-            </a>
           </div>
           <a href="/" className="news-2">
             <h3>

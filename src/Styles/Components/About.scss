@@ -52,12 +52,15 @@
 
 @media (max-width: 910px) {
   .about {
+    .paragraph {
+      max-width: 100%;
+    }
     .container {
       flex-direction: column;
       align-items: center;
     }
     .img-container {
-      max-width: 450px;
+      max-width: 100%;
       margin-left: 0;
       margin-top: 3rem;
     }

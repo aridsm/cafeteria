@@ -13,6 +13,7 @@
   .slider {
     margin-top: 4rem;
     position: relative;
+    padding: 1px;
   }
   .slide-item {
     padding: 2rem;
@@ -23,6 +24,7 @@
     &:hover,
     &:nth-of-type(1) {
       background: $c-bg-3;
+      box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05);
     }
     h3,
     .price {
@@ -88,18 +90,16 @@
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 910px) {
   .best-seller {
-    .slider-container {
-      overflow: hidden;
-    }
+    overflow: hidden;
     .slider {
       overflow: visible;
-      padding-right: 5rem;
-      margin-top: 3rem;
+      margin-top: 6rem;
     }
     .slide-item {
       background: $c-bg-3;
+      box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05);
     }
   }
 }
