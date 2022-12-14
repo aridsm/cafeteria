@@ -3,6 +3,7 @@
 .about {
   background: $c-bg-2;
   position: relative;
+
   .h2::before {
     @include numberH2(1);
   }
@@ -22,19 +23,46 @@
     display: flex;
     justify-content: space-between;
   }
-
-  .img-about {
+  .col-1 {
+    flex: 1;
+  }
+  .img-container {
     max-width: 550px;
-    border-radius: $radius;
+    width: 100%;
     z-index: 2;
+    margin-left: 2rem;
+    flex: 2;
+  }
+  .img-about {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: $radius;
   }
 
   .ornament {
     position: absolute;
-    height: 7rem;
+    height: 10rem;
     width: 20%;
     background: $c-s-1;
     right: 0;
     bottom: 0;
+  }
+}
+
+@media (max-width: 910px) {
+  .about {
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+    .img-container {
+      max-width: 450px;
+      margin-left: 0;
+      margin-top: 3rem;
+    }
+    .ornament {
+      width: 50%;
+    }
   }
 }

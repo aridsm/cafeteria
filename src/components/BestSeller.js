@@ -6,7 +6,6 @@ import img2 from "../assets/prod2.webp";
 import img3 from "../assets/prod3.webp";
 import img4 from "../assets/prod4.webp";
 import img5 from "../assets/prod5.webp";
-import "swiper/css/navigation";
 import "swiper/css";
 import { ReactComponent as ArrowSvg } from "../assets/arrow.svg";
 
@@ -80,6 +79,28 @@ const BestSeller = () => {
             onSwiper={(s) => {
               console.log("initialize swiper", s);
               setSwiper(s);
+            }}
+            breakpoints={{
+              200: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+              },
+              530: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+              },
+              700: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+              },
+              1000: {
+                slidesPerView: 4,
+                spaceBetween: 20,
+              },
+              1200: {
+                slidesPerView: 4,
+                spaceBetween: 50,
+              },
             }}
           >
             {products.map((prod) => (

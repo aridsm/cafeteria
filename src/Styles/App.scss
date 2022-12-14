@@ -56,3 +56,22 @@ h2 {
 ::-webkit-scrollbar-thumb {
   background: $c-s-1;
 }
+
+@media (max-width: 1005px) {
+  body {
+    font-size: 15px;
+  }
+
+  h2 {
+    @include fontTitles(3rem);
+  }
+}
+
+@media (max-width: 500px) {
+  .section-pd {
+    padding: 1.5rem 0;
+  }
+  .container {
+    padding: 0 1.5rem;
+  }
+}

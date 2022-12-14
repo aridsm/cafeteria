@@ -10,7 +10,6 @@
     .coffee {
       background: $c-s-1;
       color: $c-s-2;
-      font-size: 9rem;
       padding: 1rem;
       flex: 6;
       word-wrap: break-word;
@@ -28,7 +27,6 @@
       color: $c-s-1;
       padding: 2rem;
       flex: 1;
-      font-size: 5rem;
       display: grid;
       place-items: center;
       @include fontTitles(6rem);
@@ -41,6 +39,7 @@
       url("../../assets/coffee-grain.png");
     background-repeat: no-repeat;
     background-position: 50% -10%, -5% 50%, 90% 110%;
+    padding: 0 1rem;
   }
   .container {
     padding-top: 6rem;
@@ -62,7 +61,6 @@
   }
 
   h1 {
-    font-size: 4.2rem;
     @include fontTitles(4.5rem);
     line-height: 125%;
     span {
@@ -98,5 +96,43 @@
   }
   .flex-2 {
     align-items: flex-end;
+  }
+}
+
+@media (max-width: 1350px) {
+  .home {
+    .coffee-shop {
+      width: 11rem;
+      .coffee {
+        @include fontTitles(7rem);
+        span {
+          width: 4rem;
+        }
+      }
+      .shop {
+        padding: 1rem;
+        @include fontTitles(5rem);
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .home {
+    .coffee-shop {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 1005px) {
+  .home {
+    h1 {
+      @include fontTitles(3.7rem);
+      line-height: 125%;
+    }
+    .home-content {
+      padding: 0;
+    }
   }
 }

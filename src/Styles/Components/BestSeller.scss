@@ -70,3 +70,36 @@
   background-repeat: no-repeat;
   background-position: 30% -5%, 90% 110%;
 }
+
+@media (max-width: 1300px) {
+  .best-seller {
+    .slider {
+      margin-top: 6rem;
+    }
+    .arrow {
+      top: -3rem;
+    }
+    .arrow-left {
+      left: 0;
+    }
+    .arrow-right {
+      right: 0;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .best-seller {
+    .slider-container {
+      overflow: hidden;
+    }
+    .slider {
+      overflow: visible;
+      padding-right: 5rem;
+      margin-top: 3rem;
+    }
+    .slide-item {
+      background: $c-bg-3;
+    }
+  }
+}

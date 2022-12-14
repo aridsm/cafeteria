@@ -10,7 +10,9 @@ const Header = () => {
         </a>
         <ul>
           <li>
-            <a href="/">Home</a>
+            <a href="/" className="active">
+              Home
+            </a>
           </li>
           <li>
             <a href="/">Products</a>
@@ -20,6 +22,9 @@ const Header = () => {
           </li>
           <li>
             <a href="/">Contact</a>
+          </li>
+          <li>
+            <a href="/">News</a>
           </li>
         </ul>
         <a href="/" className="btn">

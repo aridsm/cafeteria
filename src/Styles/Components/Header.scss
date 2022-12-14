@@ -5,6 +5,7 @@
   width: calc(100% - 14rem);
   right: 0;
   top: 2rem;
+  padding: 0 1rem;
   nav,
   ul {
     display: flex;
@@ -17,8 +18,33 @@
     li + li {
       margin-left: 3rem;
     }
+    a {
+      transition: 0.1s;
+    }
+    .active,
+    a:hover {
+      color: $c-txt;
+    }
   }
   .logo {
     @include fontTitles(m);
+  }
+}
+
+@media (max-width: 1350px) {
+  .header {
+    width: calc(100% - 11rem);
+  }
+}
+
+@media (max-width: 1200px) {
+  .header {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1005px) {
+  .header {
+    padding: 0;
   }
 }

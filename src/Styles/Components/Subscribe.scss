@@ -32,3 +32,19 @@
     }
   }
 }
+
+@media (max-width: 1005px) {
+  .subscribe {
+    .container {
+      flex-direction: column;
+      text-align: center;
+    }
+    form {
+      margin-left: 0;
+      margin-top: 3rem;
+      input {
+        width: 15rem;
+      }
+    }
+  }
+}
