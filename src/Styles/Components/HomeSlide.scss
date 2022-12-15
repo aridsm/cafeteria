@@ -112,6 +112,7 @@
   .slide {
     flex-direction: column;
     position: relative;
+    margin: 0 auto;
     .slider {
       width: 25rem;
       height: 25rem;
@@ -161,7 +162,7 @@
 @media (max-width: 480px) {
   .slide {
     .slider {
-      width: 18rem;
+      width: 17rem;
       height: 20rem;
     }
     .slide-content .img-container {
@@ -170,7 +171,7 @@
         width: 4rem;
       }
       img {
-        width: 220px;
+        width: 200px;
       }
     }
   }

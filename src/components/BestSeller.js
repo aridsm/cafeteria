@@ -62,7 +62,7 @@ const BestSeller = () => {
     <section className="section-pd best-seller">
       <div className="container">
         <div className="header-best-seller">
-          <div>
+          <div className="title">
             <h2 className="h2">Our best seller</h2>
             <p className="paragraph">Quis hendrerit dolor magna</p>
           </div>

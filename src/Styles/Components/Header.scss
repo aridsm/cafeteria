@@ -99,5 +99,8 @@
 @media (max-width: 480px) {
   .header {
     top: 1rem;
+    ul {
+      width: calc(100% - 3rem);
+    }
   }
 }
