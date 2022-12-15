@@ -98,7 +98,7 @@
   }
 
   .see-more-btn {
-    margin: 3rem auto 0 auto;
+    margin: 2rem auto 0 auto;
     display: table;
   }
 }
@@ -122,6 +122,47 @@
     }
     .news-1 {
       background-size: 50%;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .news {
+    .news-container {
+      margin-top: 2rem;
+    }
+    .news-1,
+    .news-2,
+    .news-3 {
+      padding: 1rem;
+      h3 {
+        @include fontTitles(2.2rem);
+        max-width: 10rem;
+      }
+    }
+    .news-2 {
+      .imgs {
+        .img-1 {
+          width: 3.8rem;
+        }
+        .img-2 {
+          width: 4.5rem;
+        }
+      }
+      .price {
+        width: 4.5rem;
+        height: 4.5rem;
+        margin-right: -2rem;
+        z-index: 2;
+        .new-price {
+          @include fontTitles(1.2rem);
+        }
+      }
+    }
+
+    .news-3 {
+      background-size: 20rem, cover;
+      background-position: -8rem, center;
     }
   }
 }

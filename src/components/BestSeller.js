@@ -83,6 +83,10 @@ const BestSeller = () => {
             breakpoints={{
               200: {
                 slidesPerView: 2,
+                spaceBetween: 5,
+              },
+              450: {
+                slidesPerView: 2,
                 spaceBetween: 20,
               },
               910: {

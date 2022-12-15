@@ -101,9 +101,10 @@
 @media (max-width: 910px) {
   .best-seller {
     overflow: hidden;
+    padding: 2rem 0;
     .slider {
       overflow: visible;
-      margin-top: 6rem;
+      margin-top: 5rem;
     }
     .slide-item {
       background: $c-bg-3;
@@ -116,10 +117,10 @@
   .best-seller {
     .slide-item {
       a {
-        padding: 0.5rem;
+        padding: 1rem 0.5rem;
       }
       img {
-        width: 5rem;
+        width: 4.5rem;
       }
       .cal {
         margin: 0.5rem 0 1rem 0;

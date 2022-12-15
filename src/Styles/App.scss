@@ -79,4 +79,17 @@ h2 {
   .container {
     padding: 0 1.5rem;
   }
+  body {
+    font-size: 14px;
+  }
+  h2 {
+    @include fontTitles(2.6rem);
+  }
+  .btn {
+    @include fontTitles(1rem);
+    padding: 0.9rem 1.6rem;
+  }
+  .paragraph {
+    line-height: 145%;
+  }
 }

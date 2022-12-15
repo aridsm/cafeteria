@@ -127,6 +127,11 @@
           margin: 0 auto;
         }
       }
+      &:nth-of-type(1) {
+        img {
+          margin-right: -3rem;
+        }
+      }
     }
     .buttons-list {
       flex-direction: row;
@@ -148,6 +153,24 @@
       }
       .arrow-prev {
         transform: rotate(-90deg);
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .slide {
+    .slider {
+      width: 18rem;
+      height: 20rem;
+    }
+    .slide-content .img-container {
+      .price {
+        height: 4rem;
+        width: 4rem;
+      }
+      img {
+        width: 220px;
       }
     }
   }
