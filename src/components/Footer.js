@@ -32,7 +32,7 @@ const Footer = () => {
           </address>
         </section>
       </div>
-      <a href="/" className="by">
+      <a href="https://github.com/aridsm" className="by">
         By Ariane Morelato
       </a>
     </footer>

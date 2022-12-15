@@ -6,6 +6,9 @@ import img2 from "../assets/prod2.webp";
 import img3 from "../assets/prod3.webp";
 import img4 from "../assets/prod4.webp";
 import img5 from "../assets/prod5.webp";
+import img6 from "../assets/prod6.webp";
+import img7 from "../assets/prod7.webp";
+import img8 from "../assets/prod8.webp";
 import "swiper/css";
 import { ReactComponent as ArrowSvg } from "../assets/arrow.svg";
 
@@ -13,37 +16,58 @@ const products = [
   {
     name: "Cras sed",
     description: "Feugiat nibh sed pulvinar proin",
-    price: "$ 7.99",
+    price: "$ 12.99",
     cal: "185kcal",
     img: img1,
   },
   {
     name: "Consequat",
     description: "Nibh tellus molestie nunc non",
-    price: "$ 7.99",
+    price: "$ 8.95",
     cal: "185kcal",
     img: img2,
   },
   {
     name: "Sollicitudin",
     description: "Id porta nibh venenatis cras sed",
-    price: "$ 7.99",
+    price: "$ 5.49",
     cal: "185kcal",
     img: img3,
   },
   {
     name: "Amet",
     description: "Et pharetra pharetra massa massa ultricies",
-    price: "$ 7.99",
+    price: "$ 12.99",
     cal: "185kcal",
     img: img4,
   },
   {
     name: "Blandit",
     description: "Feugiat nibh sed pulvinar proin",
-    price: "$ 7.99",
+    price: "$ 8.52",
     cal: "185kcal",
     img: img5,
+  },
+  {
+    name: "Venenatis",
+    description: "Habitant morbi tristique senectus",
+    price: "$ 8.99",
+    cal: "185kcal",
+    img: img6,
+  },
+  {
+    name: "Ultricies",
+    description: "Vel pretium lectus quam id leo",
+    price: "$ 14.25",
+    cal: "185kcal",
+    img: img7,
+  },
+  {
+    name: "Turpis",
+    description: "Diam sit amet nisl suscipit adipiscing",
+    price: "$ 11.59",
+    cal: "185kcal",
+    img: img8,
   },
 ];
 

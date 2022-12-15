@@ -10,9 +10,11 @@ const Home = () => {
     <section className="home">
       <div className="coffee-shop">
         <div className="coffee">
-          {coffee.map((letter, index) => (
-            <span key={index}>{letter}</span>
-          ))}
+          <div>
+            {coffee.map((letter, index) => (
+              <span key={index}>{letter}</span>
+            ))}
+          </div>
         </div>
         <div className="shop">shop</div>
       </div>

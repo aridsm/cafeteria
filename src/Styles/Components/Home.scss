@@ -7,19 +7,22 @@
     flex-direction: column;
     width: 14rem;
     height: 100vh;
+    max-height: 900px;
     .coffee {
       background: $c-s-1;
       color: $c-s-2;
       padding: 1rem;
       flex: 6;
-      word-wrap: break-word;
-      line-height: 100%;
       text-align: center;
       @include fontTitles(10rem);
-      span {
-        width: 5rem;
-        display: inline-block;
-        text-align: center;
+      display: grid;
+      place-items: center;
+      > div {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 10rem 10rem 10rem;
+        place-items: center;
+        margin: auto;
       }
     }
     .shop {
@@ -104,7 +107,7 @@
     .coffee-shop {
       width: 11rem;
       .coffee {
-        @include fontTitles(7rem);
+        @include fontTitles(8.5rem);
         span {
           width: 4rem;
         }

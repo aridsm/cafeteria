@@ -10,9 +10,9 @@ const News = () => {
         <p className="paragraph">Quis hendrerit dolor magna</p>
 
         <div className="news-container">
-          <div className="news-1">
+          <a href="/" className="news-1">
             <h3>Nibh tellus molestie nunc non</h3>
-          </div>
+          </a>
           <a href="/" className="news-2">
             <h3>
               buy 1, <br /> get 2
