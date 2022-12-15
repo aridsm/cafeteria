@@ -49,12 +49,16 @@ const HomeSlide = () => {
       <Swiper
         slidesPerView={1}
         className="slider"
-        direction="vertical"
         onSwiper={(s) => {
           setSwiper(s);
         }}
         onActiveIndexChange={(s) => {
           setActiveIndex(s.activeIndex);
+        }}
+        breakpoints={{
+          910: {
+            direction: "vertical",
+          },
         }}
       >
         {coffeesList.map((coffee) => (
@@ -73,7 +77,7 @@ const HomeSlide = () => {
 
       <div className="buttons-list">
         <button
-          className="arrow"
+          className="arrow arrow-prev"
           onClick={prevSlideHandler}
           title="produto anterior"
         >
@@ -83,13 +87,13 @@ const HomeSlide = () => {
           <button
             key={coffee.name}
             onClick={() => activeSlide(index)}
-            className={activeIndex === index ? "active" : ""}
+            className={`${activeIndex === index ? "active" : ""} btn-slide`}
           >
             0{index + 1}
           </button>
         ))}
         <button
-          className="arrow arrow-down"
+          className="arrow arrow-next"
           onClick={nextSlideHandler}
           title="próximo produto"
         >
