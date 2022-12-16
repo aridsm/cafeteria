@@ -1,11 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../Styles/Components/News.scss";
 import imgCoffee from "../assets/coffee-news-2.png";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const News = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+    });
+  }, []);
   return (
     <section className="section-pd news">
-      <div className="container">
+      <div className="container" data-aos="fade-up">
         <h2 className="h2">What's new?</h2>
         <p className="paragraph">Quis hendrerit dolor magna</p>
 

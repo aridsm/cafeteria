@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "../Styles/Components/BestSeller.scss";
 import { Swiper, SwiperSlide } from "swiper/react";
 import img1 from "../assets/prod1.webp";
@@ -11,6 +11,8 @@ import img7 from "../assets/prod7.webp";
 import img8 from "../assets/prod8.webp";
 import "swiper/css";
 import { ReactComponent as ArrowSvg } from "../assets/arrow.svg";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const products = [
   {
@@ -72,6 +74,12 @@ const products = [
 ];
 
 const BestSeller = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+    });
+  }, []);
+
   const [swiper, setSwiper] = useState(null);
 
   const nextSlideHandler = () => {
@@ -84,7 +92,7 @@ const BestSeller = () => {
 
   return (
     <section className="section-pd best-seller">
-      <div className="container">
+      <div className="container" data-aos="fade-up">
         <div className="header-best-seller">
           <div className="title">
             <h2 className="h2">Our best seller</h2>

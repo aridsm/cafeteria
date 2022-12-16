@@ -15,14 +15,14 @@ const coffeesList = [
     img: img1,
   },
   {
-    name: "Pretium fusce 2",
-    description: "Sem integer vitae justo eget 3",
+    name: "Tincidunt",
+    description: "Eu augue ut lectus arcu bibendum",
     price: "$ 12.49",
     img: img2,
   },
   {
-    name: "Pretium fusce 3",
-    description: "Sem integer vitae justo eget 3",
+    name: "Ultrices",
+    description: "Venenatis tellus in metus vulputate",
     price: "$ 9.99",
     img: img3,
   },

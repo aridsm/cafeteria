@@ -1,11 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../Styles/Components/About.scss";
 import img from "../assets/about-img.jpg";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const About = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+    });
+  }, []);
   return (
     <section className="about section-pd">
-      <div className="container">
+      <div className="container" data-aos="fade-up">
         <div className="col-1">
           <h2 className="h2">About us</h2>
           <p className="paragraph">
