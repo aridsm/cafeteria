@@ -66,6 +66,7 @@
     }
     .arrow {
       @include arrow;
+      z-index: 2;
     }
     .arrow-next {
       transform: rotate(180deg);

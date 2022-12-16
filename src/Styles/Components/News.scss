@@ -130,6 +130,7 @@
   .news {
     .news-container {
       margin-top: 2rem;
+      grid-template-rows: repeat(3, 10rem);
     }
     .news-1,
     .news-2,
