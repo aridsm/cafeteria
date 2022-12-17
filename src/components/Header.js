@@ -59,7 +59,7 @@ const Header = () => {
           </li>
         </ul>
         <a href="/" className="btn">
-          Start shopping
+          Products
         </a>
       </nav>
     </header>
