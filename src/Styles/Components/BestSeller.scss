@@ -101,7 +101,6 @@
 @media (max-width: 910px) {
   .best-seller {
     overflow: hidden;
-    padding: 2rem 0;
     .slider {
       overflow: visible;
       margin-top: 5rem;
@@ -132,5 +131,11 @@
     .btn {
       white-space: nowrap;
     }
+  }
+}
+
+@media (max-width: 480px) {
+  .best-seller {
+    padding: 2rem 0;
   }
 }
