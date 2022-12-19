@@ -2,7 +2,7 @@
 
 Projeto de uma landing page de uma cafeteria fictícia feito com React JS e Sass.
 
-![homepage](https://github.com/aridsm/cafeteria/blob/master/public/cafeteria.jpg)
+![homepage](https://github.com/aridsm/cafeteria/blob/master/public/Coffee.png)
 
 ## Objetivo
 
