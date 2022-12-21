@@ -49,6 +49,8 @@ const HomeSlide = () => {
       <Swiper
         slidesPerView={1}
         className="slider"
+        grabCursor="true"
+        touchEventsTarget="container"
         onSwiper={(s) => {
           setSwiper(s);
         }}

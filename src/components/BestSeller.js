@@ -108,8 +108,9 @@ const BestSeller = () => {
             slidesPerView={4}
             scrollbar={{ draggable: true }}
             className="slider"
+            grabCursor="true"
+            touchEventsTarget="container"
             onSwiper={(s) => {
-              console.log("initialize swiper", s);
               setSwiper(s);
             }}
             breakpoints={{
